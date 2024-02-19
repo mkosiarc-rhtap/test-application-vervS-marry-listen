@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: subscription-test
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: subscription-test
+    app.kubernetes.io/part-of: test-application
+  name: subscription-test
+spec:
+  selector:
+    app.kubernetes.io/instance: subscription-test
+status:
+  loadBalancer: {}
